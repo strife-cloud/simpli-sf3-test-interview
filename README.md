@@ -25,6 +25,7 @@ On this page, you will show a title and a table (see https://github.com/simplifi
 The page shows the sum of the 2 numbers. If the result number is a odd, you show 'Impair', if it's not you show 'Paire'  
 The input data are available in *app/config/config.yml* in *inputData* parameter.  
 The inputData are computing by a *service* (so not directly by the controller). So the service has *inputData* as input and has the final array (summed and parity) as ouput.  
+Don't forget to add pertinent test to your code  
 
 
 ### Contribution guidelines ###
