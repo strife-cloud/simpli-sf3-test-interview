@@ -11,7 +11,8 @@ This repository is for testing SF3 skills of candidates who apply to a job at Si
 ### How do I get set up? ###
 
 Be sure to have PHP7 installed on your machine  
-Clone this repository  
+Fork the project
+Clone the repository  
 cd simpli-sf3-test-interview  
 composer install  
 To run server : php bin/console server:run  
@@ -29,4 +30,4 @@ The inputData are computing by a *service* (so not directly by the controller). 
 ### Contribution guidelines ###
 When you start working, please push an initial commit.  
 After that, please push at least one commit every 30 minutes.  
-When you are done, please create a Pull Request
+When you are done, please create a Pull Request (https://help.github.com/articles/creating-a-pull-request-from-a-fork/)
