@@ -11,7 +11,7 @@ This repository is for testing SF3 skills of candidates who apply to a job at Si
 ### How do I get set up? ###
 
 Be sure to have PHP7 installed on your machine  
-Fork the project
+Fork the project  
 Clone the repository  
 cd simpli-sf3-test-interview  
 composer install  
