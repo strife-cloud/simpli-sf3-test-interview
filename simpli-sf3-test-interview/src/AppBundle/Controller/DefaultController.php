@@ -18,4 +18,12 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
     }
+    /**
+     * @Route("/", name="homepage")
+     */
+    public function InputDataAction(){
+        return $this->render('default/index.html.twig', array(
+        'my_data' => $this->getParameter('inputData'),
+        ));
+
 }
