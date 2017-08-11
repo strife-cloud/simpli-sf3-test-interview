@@ -1,3 +1,7 @@
+danny_work:
+    resource: "@DannyWorkBundle/Resources/config/routing.yml"
+    prefix:   /
+    
 app:
     resource: '@AppBundle/Controller/'
     type: annotation

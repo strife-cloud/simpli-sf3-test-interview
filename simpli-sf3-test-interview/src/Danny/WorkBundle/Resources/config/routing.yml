@@ -1,0 +1,3 @@
+my_work:
+    path:     /my-work
+    defaults: { _controller: DannyWorkBundle:Work:index }

@@ -1,0 +1,49 @@
+{# src/Danny/WorkBundle/Resources/views/Work/index.html.twig #}
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title> </title>
+
+	{% block stylesheets %}
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	{% endblock %}
+
+
+  </head>
+  <body>
+  	<div class="container">
+	  	<h1 style="font-weight : bolder;">Our super table</h1>
+	  	
+	  	<table class="table table-bordered table-striped">
+	  		<thead>
+		  		<tr class="info">
+		  			{% for i in 1..size_tab %}
+		  				<th>Item{{ i }}</th>
+		  			{% endfor %}
+		  				<th>Sum items</th>
+		  				<th>Paire/impaire</th>
+		  		</tr>
+		  	</thead>
+
+		  	<tbody>
+				{% for row_tab in table %}
+					<tr>
+						{% for value in row_tab %}
+							<td>{{ value }}</td>
+						{% endfor %}
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div> <!-- container -->
+
+	{% block javascripts %}
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	{% endblock %}
+
+  </body>
+</html>

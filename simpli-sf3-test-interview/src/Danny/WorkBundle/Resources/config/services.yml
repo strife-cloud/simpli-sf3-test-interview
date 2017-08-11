@@ -1,0 +1,7 @@
+# src/Danny/WorkBundle/Resources/config/services.yml
+
+services:
+    danny_work.computetable:
+        class: Danny\WorkBundle\ComputeTable\DannyComputeTable
+        arguments:
+            - %inputData%
