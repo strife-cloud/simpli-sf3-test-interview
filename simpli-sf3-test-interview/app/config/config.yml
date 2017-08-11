@@ -8,6 +8,9 @@ imports:
 parameters:
     locale: en
     inputData: [[1,1],[3,4],[10,12]]
+    inputData2: [[1,3],[8,4],[-1,52]]
+    inputData3: [[176,1],[0,4],[10,-10]]
+    inputData4: [[8,3],[8,5],[-1,52, 8]]
 
 framework:
     #esi: ~

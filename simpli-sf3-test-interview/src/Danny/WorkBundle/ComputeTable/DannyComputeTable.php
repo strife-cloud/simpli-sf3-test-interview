@@ -24,7 +24,8 @@ class DannyComputeTable
     for($j=0;$j<$this->height;$j++){
       $temp=0;
       for($i=0;$i<$this->width;$i++){
-        $temp+=$res[$j][$i];
+        // dans la cas où les sous-tab ne sont pas de même taille, on va affecter les cases vides à la valeur 0, utile à l'affichage twig
+        isset($res[$j][$i]) ? $temp+=$res[$j][$i] : $res[$j][$i]=0;
       }
       $res[$j][$this->width] = $temp;
 
